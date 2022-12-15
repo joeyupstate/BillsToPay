@@ -1,0 +1,13 @@
+/* /todo form page */
+.form-style{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 250px;
+    min-width: 300px;
+    color:black;
+    background-color:white;
+  
+  
+  }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { unmountComponentAtNode } from "react-dom";
 import uuid from "react-uuid";
 import "../App.css";
+import "./Todo.css";
 function TodoForm({ addTodo }) {
   const [todo, setTodo] = useState({
     id: "",
@@ -27,13 +28,14 @@ function TodoForm({ addTodo }) {
   }
   return (
     <form className="form-style" onSubmit={handleSubmit}>
+      <label for="task">Add Bill</label>
       <input
         type="text"
         name="task"
         value={todo.task}
         onChange={handleTaskInputChange}
       />
-      <p>Date Due</p>
+    <label for="trip-start">Due Date</label>
       <input
         type="date"
         id="start"

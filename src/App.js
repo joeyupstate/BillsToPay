@@ -44,12 +44,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>Bill Pay App</p>
+        <div className="container">
         <TodoForm addTodo={addTodo} />
         <TodoList
           todos={todos}
           toggleComplete={toggleComplete}
           removeTodo={removeTodo}
         />
+        </div>
       </header>
     </div>
   );
